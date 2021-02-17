@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Drag and Drop</title>
+</head>
+<body>
+    <div class="entire-doc">
+    <div class="big" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div class="cols"></div>
+        <div class="cols"></div>
+        <div class="cols"></div>
+    </div>
+    <div class="small">
+        <div draggable="true" ondragstart="drag(event)" id="cols1" class="cols-dragg"></div>
+        <div draggable="true" ondragstart="drag(event)" id="cols2" class="cols-dragg"></div>
+        <div draggable="true" ondragstart="drag(event)" id="cols3" class="cols-dragg"></div>
+        <div draggable="true" ondragstart="drag(event)" id="cols4" class="cols-dragg"></div>
+        <div draggable="true" ondragstart="drag(event)" id="cols5" class="cols-dragg"></div>
+    </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
